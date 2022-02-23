@@ -1,11 +1,11 @@
-import React from 'react'
-import styled from 'styled-components'
-import ImgSlider from './ImgSlider'
-import Trending from './Trending'
-import NewDisney from './NewDisney'
-import Originals from './Originals'
-import Recommends from './Recommends'
-import ChannelCards from './ChannelCards'
+import React from 'react';
+import styled from 'styled-components';
+import ImgSlider from '../SubComponents/ImgSlider';
+import Trending from '../SubComponents/Trending';
+import NewDisney from '../SubComponents/NewDisney';
+import Originals from '../SubComponents/Originals';
+import Recommends from '../SubComponents/Recommends';
+import ChannelCards from '../Components/Cards/ChannelCards';
 
 
 const Container =  styled.div`

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import movieData from './movieData';
+import movieData from '../Components/movieData';
 import { useParams } from 'react-router-dom';
 
 
@@ -177,20 +177,20 @@ function Detail(props) {
   return (
     <Container>
             <Background>
-                <img src={detailData.backgroundImg} alt="" />
+                <img src={detailData.backgroundImg} alt="Background" />
             </Background>
 
             <ImageTitle>
-                <img src={detailData.titleImg} alt="" />
+                <img src={detailData.titleImg} alt="Title" />
             </ImageTitle>
             <ContentMeta>
                 <Controls>
                     <Player>
-                        <img src="/images/play-icon-black.png" alt="" />
+                        <img src="/images/play-icon-black.png" alt="play" />
                         <span>Play</span>
                     </Player>
                     <Trailer>
-                        <img src="/images/play-icon-white.png" alt="" />
+                        <img src="/images/play-icon-white.png" alt="trailer" />
                         <span>Trailer</span>
                     </Trailer>
                     <AddList>
@@ -199,7 +199,7 @@ function Detail(props) {
                     </AddList>
                     <GroupWatch>
                         <div>
-                            <img src="/images/group-icon.png" alt="" />
+                            <img src="/images/group-icon.png" alt="group" />
                         </div>
                     </GroupWatch>
                 </Controls>

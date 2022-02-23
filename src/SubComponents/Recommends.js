@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import movieData from './movieData';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import movieData from '../Components/movieData';
 
 const Container = styled.div`
     padding-top: 0 0 26px;
@@ -45,30 +45,30 @@ const Wrap = styled.div`
     }
 `
 
-function NewDisney(props) {
-  const [newDisney,setNewDisney] = useState([]);
-    // console.log(movieData);
+function Recommends(props) {
+
+  const [recommend,setRecommend] = useState([]);
 
     useEffect(()=>{
-        const newMovieDisney = movieData.filter((movie)=> movie.type === 'new')
-        // console.log(newMovieDisney);
-        setNewDisney(newMovieDisney)
+        const newMovieRecommend = movieData.filter((movie)=> movie.type === 'recommend')
+        setRecommend(newMovieRecommend)
     },[])
+
   return (
     <Container>
-            <h2>New to Disney+</h2>
-            <Content>
-                {newDisney.map((movie,key)=>(
-                   <Wrap key={key}>
-                       {movie.id}
-                       <Link to={'/detail/' + movie.id}>
-                           <img src={movie.cardImg} alt = {movie.title}/>
-                       </Link>
-                   </Wrap>
-               ))}
-            </Content>
-        </Container>
+    <h2>Recommended for you</h2>
+    <Content>
+       {recommend.map((movie,key)=>(
+           <Wrap key={key}>
+               {movie.id}
+               <Link to={'/detail/' + movie.id}>
+                   <img src={movie.cardImg} alt = {movie.title}/>
+               </Link>
+           </Wrap>
+       ))}
+    </Content>
+</Container>
   )
 }
 
-export default NewDisney
+export default Recommends
