@@ -158,7 +158,8 @@ const movieData = [
         "title": "My music story",
         "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/97BB36F8B9FC053F561894DD7B1C42C4FD20E63560F481CBCB3B9D3600CFCA3B/scale?width=1440&aspectRatio=1.78",
         "type": "new"
-    }
+    },
+    
 ]
 
 

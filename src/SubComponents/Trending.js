@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import movieData from './movieData';
+import movieData from '../Components/movieData';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 

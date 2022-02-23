@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import movieData from './movieData';
+import movieData from '../Components/movieData';
 import { Link } from 'react-router-dom';
 
 const Container = styled.div`
